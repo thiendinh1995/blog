@@ -1,0 +1,248 @@
+<div class="container">
+    <!-- header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-content-left">
+                <p>My Project</p>
+            </div>
+            <div class="header-content-right">
+                <p>Login</p>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- menu-navbar -->
+    <div class="menu-navbar">
+        <div class="menu-navbar-content-pc">
+            <ul class="menu-navbar-content-mobile-name-menu">
+                <li>
+                    <a id="icon-menu" (click)="showMenuNavbar()"><span class="fa fa-list"
+                            id="hidden-navbar-list"></span></a>
+                    <a id="hidden-navbar-menu-search"><span class="fa fa-search"
+                            id="hidden-navbar-menu-search"></span></a>
+                </li>
+            </ul>
+            <ul class="menu-navbar-content-pc-name-menu">
+                <li>
+                    <a>Home</a>
+                    <a (click)="showMenuNavbar()" id="hidden-navbar-menu"><span class="fa fa-times"
+                            id="hidden-navbar-menu"></span></a>
+                </li>
+                <li>
+                    <a>Features</a>
+                </li>
+                <li>
+                    <a>Mega Menu</a>
+                </li>
+                <li>
+                    <a>Video</a>
+                </li>
+                <li>
+                    <a>Documentation</a>
+                </li>
+                <li>
+                    <a>Dowload</a>
+                </li>
+                <li class="menu-navbar-content-pc-search">
+                    <i class="fa fa-search menu-navbar-content-pc-search-icon"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end menu-navbar -->
+    <!--  -->
+    <div class="content">
+        <div class="post">
+            <div class="post-slider">
+                <div class="post-silder-content" #slidersView>
+                    <div class="post-image">
+                        <img src="../assets/image/girl-984155_960_720.jpg" atl="1" />
+                        <span>Game</span>
+                        <div class="post-image-info">
+                            <div class="post-info">
+                                <h2>
+                                    Girl play with fireworks in nature
+                                </h2>
+                            </div>
+                            <div class="post-meta">
+                                <a class="fa fa-user"> Templates Yard</a>
+                                <a class="post-meta-timer"> March 17, 2016</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="../assets/image/aircraft-1183171_960_720.jpg" atl="2" />
+                        <span>Game</span>
+                        <div class="post-image-info">
+                            <div class="post-info">
+                                <h2>
+                                    Girl play with fireworks in nature
+                                </h2>
+                            </div>
+                            <div class="post-meta">
+                                <a class="fa fa-user"> Templates Yard</a>
+                                <a class="post-meta-timer"> March 17, 2016</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="../assets/image/visualstudio-696x346.png" atl="3" />
+                        <span>Game</span>
+                        <div class="post-image-info">
+                            <div class="post-info">
+                                <h2>
+                                    Girl play with fireworks in nature
+                                </h2>
+                            </div>
+                            <div class="post-meta">
+                                <a class="fa fa-user"> Templates Yard</a>
+                                <a class="post-meta-timer"> March 17, 2016</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-posts">
+                <div class="item-list-post">
+                    <div class="item-image">
+                        <img src="../assets/image/item1.jpg" />
+                    </div>
+                    <div class="item-content">
+                        <p class="item-title">Small bridge and a beautiful view of the beach</p>
+                        <div id="item-info">
+                            <span class="fa fa-user"></span>
+                            <p>Admin</p>
+                            <span class="fa fa-clock-o" id="item-info-time"></span>
+                            <p>August 23, 2016</p>
+                        </div>
+                        <p class="item-introduce">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lor…</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="item-list-post">
+                    <div class="item-image">
+                        <img src="../assets/image/woman-1150067_960_720.jpg" />
+                    </div>
+                    <div class="item-content">
+                        <p class="item-title">Elegant woman in front of a waterfall</p>
+                        <div id="item-info">
+                            <span class="fa fa-user"></span>
+                            <p>Admin</p>
+                            <span class="fa fa-clock-o" id="item-info-time"></span>
+                            <p>August 23, 2016</p>
+                        </div>
+                        <p class="item-introduce">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lor…</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="item-list-post">
+                    <div class="item-image">
+                        <img src="../assets/image/item2.jpg" />
+                    </div>
+                    <div class="item-content">
+                        <p class="item-title">Left sidebar post</p>
+                        <div id="item-info">
+                            <span class="fa fa-user"></span>
+                            <p>Admin</p>
+                            <span class="fa fa-clock-o" id="item-info-time"></span>
+                            <p>August 23, 2016</p>
+                        </div>
+                        <p class="item-introduce">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lor…</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="follow-email">
+                <div class="follow-email-content">
+                    <h3 class="title">
+                        Follow by Email
+                    </h3>
+                    <span class="before-text">Get all latest content delivered straight to your inbox.</span>
+                    <input placeholder="Email Address" />
+                    <button>Subscribes</button>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="popular-post">
+                    <span>Popular post</span>
+                </div>
+                <div class="introduce-post">
+                    <div id="post-content">
+                        <img src="../assets/image/aircraft-1183171_960_720.jpg" />
+                    </div>
+                    <div id="title-post">
+                        <h4>Small bridge and a beautiful view of the beach</h4>
+                        <p>August 23, 2016</p>
+                    </div>
+                </div>
+                <div class="introduce-post">
+                    <div id="post-content">
+                        <img src="../assets/image/girl-984155_960_720.jpg" />
+                    </div>
+                    <div id="title-post">
+                        <h4>Small bridge and a beautiful view of the beach</h4>
+                        <p>August 23, 2016</p>
+                    </div>
+                </div>
+                <div class="introduce-post">
+                    <div id="post-content">
+                        <img src="../assets/image/woman-1150067_960_720.jpg" />
+                    </div>
+                    <div id="title-post">
+                        <h4>Small bridge and a beautiful view of the beach</h4>
+                        <p>August 23, 2016</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="popular-post fan-page">
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="popular-post categories">
+                    <span>Category</span>
+                </div>
+                <div class="list-categories">
+                    <ul class="list-item-categoris">
+                        <li id="first-item">Business<span class="label-count">(5)</span></li>
+                        <li>Photograph<span class="label-count">(5)</span></li>
+                        <li>Sport<span class="label-count">(5)</span></li>
+                        <li>Technology<span class="label-count">(5)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="popular-post tags">
+                    <span>Tags</span>
+                </div>
+                <div class="list-tags">
+                    <ul class="list-item-tags">
+                        <li><a>Business</a></li>
+                        <li><a>Photograph</a></li>
+                        <li><a>Sport </a></li>
+                        <li><a>Business</a></li>
+                        <li><a>Photograph</a></li>
+                        <li><a>Sport </a></li>
+                        <li><a>Technology</a></li>
+                        <li><a>Business</a></li>
+                        <li><a>Photograph</a></li>
+                        <li><a>Sport </a></li>
+                        <li><a>Business</a></li>
+                        <li><a>Photograph</a></li>
+                        <li><a>Sport </a></li>
+                        <li><a>Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

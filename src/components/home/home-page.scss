@@ -1,0 +1,46 @@
+.image-product {
+    opacity: 0.3;
+    filter: alpha(opacity=50); 
+}
+
+.image-product:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.text-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);  
+}
+
+.text-image:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);  
+}
+
+.image-top img {
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.hash-tag {
+    color: gray; 
+    margin-right: 5px
+}
+
+.hash-tag:hover {
+    opacity: 0.5;
+}
