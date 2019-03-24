@@ -32,8 +32,8 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     let slides = document.getElementsByClassName('post-image') as HTMLCollectionOf<HTMLElement>;
-    const sliderFirst = slides[0].cloneNode(true);
-    const sliderLast = slides[slides.length - 1].cloneNode(true);
+    // const sliderFirst = slides[0].cloneNode(true);
+    // const sliderLast = slides[slides.length - 1].cloneNode(true);
     // (slides[0] as ChildNode).before(sliderLast);
     // (slides[slides.length - 1] as ChildNode).after(sliderFirst);
   }
