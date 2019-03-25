@@ -1,12 +1,12 @@
 <div class="post-detail">
     <div class="post-detail-link">
-        <a>
-            Home >
+        <a (click)="onClickEvent()">
+            Home <i class="fa fa-angle-right" aria-hidden="true"></i>
         </a>
         <a>
-            Post >
+            Post <i class="fa fa-angle-right" aria-hidden="true"></i>
         </a>
-        <a>
+        <a id="title-post">
             Girl play with fireworks in nature
         </a>
     </div>
@@ -53,5 +53,43 @@
                 embarrassing hidden in the middle of text.
             </p>
         </div>
+        <div class="post-detail-download">
+            <div>
+                <p>Link dowload:</p>
+                <a>https://coursetro.com/posts/code/59/Angular-4-Event-Binding</a>
+            </div>
+            <div>
+                <p>Link dự phòng:</p>
+                <a>https://coursetro.com/posts/code/59/Angular-4-Event-Binding</a>
+            </div>
+        </div>
+    </div>
+    <div class="post-tags">
+        <button>
+            Tags
+        </button>
+        <button>
+            Fashion
+        </button>
+        <button>
+            Nature
+        </button>
+        <button>
+            People
+        </button>
+    </div>
+    <div class="post-share">
+        <button id="post-share-facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </button>
+        <button id="post-share-twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </button>
+        <button id="post-share-google">
+            <i class="fa fa-google" aria-hidden="true"></i>
+        </button>
+        <button id="post-share-envelope">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </button>
     </div>
 </div>

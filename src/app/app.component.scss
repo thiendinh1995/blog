@@ -340,9 +340,9 @@
         width: 100%;
     }
     .content-right {
-        width: 80%;
+        width: auto;
         flex-direction: column-reverse;
-        margin: auto;
+        padding: 0 20px 0 20px;
     }
 }
 

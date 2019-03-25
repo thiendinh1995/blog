@@ -1,46 +1,149 @@
 .post-detail {
-    padding-right: 20px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin: auto;
+  padding-right: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
 }
 
 .post-detail-link {
-    display: flex;
-    flex-direction: row;
+  cursor: pointer;
+  color: #365899;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.post-detail-link a:hover {
+  color: #656565;
+}
+
+.post-detail-link a {
+  margin-left: 5px;
+  flex-shrink: 0;
 }
 
 .post-detail-content {
-    border-top: 1px  #ebebeb solid;
-    width: 630px;
+  border-top: 1px #ebebeb solid;
+  width: 630px;
 }
 
 .post-detail-title {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .post-detail-text {
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #656565;
-    line-height: 1.6em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656565;
+  line-height: 1.6em;
 }
 
 .post-detail-media {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .post-detail-media img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .post-detail-media iframe {
-    width: 100%;
+  width: 100%;
 }
 
 #post-detail-text-high-light {
-    border-left: 5px  #59ed89 solid;
+  border-left: 5px #59ed89 solid;
+  padding-left: 20px;
+}
+
+#post-detail-info i {
+  margin: 0 5px 0 5px;
+}
+
+#title-post {
+  flex-shrink: 1;
+}
+
+#post-detail-info {
+  color: #aaa;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.post-detail-download p {
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.post-detail-download a {
+  color: #0072bc;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic; 
+}
+
+.post-tags button {
+  margin-right: 10px;
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  color: #111111;
+  border-radius: 4px;
+  border: #f2f2f2;
+  padding: 5px 10px 5px 10px;
+}
+
+.post-share {
+  margin-top: 20px;
+}
+
+.post-share button{
+  margin-right: 10px;
+  padding: 7px 15px 7px 15px;
+  color: #ebebeb;
+}
+
+#post-share-facebook {
+  background-color: #3b5999;
+  border: #3b5999;
+}
+
+#post-share-twitter {
+  background-color: #00acee;
+  border: #00acee;
+}
+
+#post-share-google {
+  background-color: #db4a39;
+  border: #db4a39;
+}
+
+#post-share-envelope {
+  background-color: #888;
+  border: #888;
+}
+
+@media only screen and (max-width: 649px) {
+  .post-detail {
     padding-left: 20px;
+  }
+  .post-detail-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 899px) {
+  .post-detail {
+    padding-left: 20px;
+  }
+  .post-detail-content {
+    width: 100%;
+  }
 }
