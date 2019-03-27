@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { timer, Subscription } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
-  constructor() {
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.timerSubscription = timer(2000, 2000).subscribe(() => {
       this.showSlider();
     });
@@ -55,6 +56,10 @@ export class AppComponent implements AfterViewInit {
     //   this.sliders.nativeElement.style = `transform: translate(-${this.sliderCurrent * 630}px)`;
     // }
     // this.sliderCurrent++;
+  }
+
+  onClickCategory(): void {
+    this.router.navigate(['/post-category']);
   }
 
 }

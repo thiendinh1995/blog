@@ -8,7 +8,7 @@
 
 .post-detail-link {
   cursor: pointer;
-  color: #365899;
+  color: #ffffff;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -22,6 +22,7 @@
 
 .post-detail-link a {
   margin-left: 5px;
+  margin-right: 5px;
   flex-shrink: 0;
 }
 
@@ -87,7 +88,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  font-style: italic; 
+  font-style: italic;
 }
 
 .post-tags button {
@@ -104,7 +105,7 @@
   margin-top: 20px;
 }
 
-.post-share button{
+.post-share button {
   margin-right: 10px;
   padding: 7px 15px 7px 15px;
   color: #ebebeb;
@@ -129,6 +130,102 @@
   background-color: #888;
   border: #888;
 }
+
+.post-home {
+  height: 20px;
+  position: relative;
+  background: #111111;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.post-category {
+  height: 20px;
+  position: relative;
+  background: #111111;
+  margin-right: 7px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.post-title {
+  height: 20px;
+  position: relative;
+  background: #111111;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+.post-home:before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #111111;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.post-category:before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #111111;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.post-category:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.post-title:before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #111111;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.post-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
 
 @media only screen and (max-width: 649px) {
   .post-detail {
