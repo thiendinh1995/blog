@@ -4,6 +4,14 @@ $colors: (
   danger: #f53d3d,
   light: #f4f4f4,
   dark: #111111,
-  favorite: #69bb7b
+  favorite: #69bb7b,
+  fontColor: #fff,
+  background: #f8f8f8,
+  icon: #656565,
+  popup: rgba(0,0,0,0.4),
 );
-$favorite: #69bb7b;
+
+$fonts: (
+  primary: 'Open Sans, sans-serif',
+  secondary: 'Merriweather, Georgia, serif',
+);

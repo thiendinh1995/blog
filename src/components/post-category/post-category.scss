@@ -263,9 +263,9 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* Reponsive screen > 649px to 899px */
+/* Reponsive screen 768px to 1023px */
 
-@media only screen and (min-width: 650px) and (max-width: 899px) {
+@media only screen and (min-width:768px) and (max-width:1023px) {
   .content-left {
     padding: 0;
     margin: auto;
@@ -277,9 +277,9 @@
   }
 }
 
-/* Reponsive screen < 649px */
+/* Reponsive screen 320 to 767px */
 
-@media only screen and (max-width: 649px) {
+@media only screen and (min-width:320px) and (max-width:767px)  {
   .post {
     padding: 0 10px 0 10px;
   }

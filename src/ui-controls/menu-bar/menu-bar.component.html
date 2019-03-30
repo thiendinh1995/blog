@@ -1,0 +1,39 @@
+<div class="menu-navbar">
+    <div class="menu-navbar-content-pc">
+        <ul class="menu-navbar-content-mobile-name-menu" *ngIf="!isDisplaySearchBar">
+            <li>
+                <a id="icon-menu" (click)="showMenuNavbar()"><span class="fa fa-list"
+                        id="hidden-navbar-list"></span></a>
+                <a (click)="onClickDisplaySearchBar()" id="hidden-navbar-menu-search"><span class="fa fa-search"
+                        id="hidden-navbar-menu-search"></span></a>
+            </li>
+        </ul>
+        <ul class="menu-navbar-content-pc-name-menu" *ngIf="!isDisplaySearchBar">
+            <li>
+                <a>Home</a>
+                <a (click)="showMenuNavbar()" id="hidden-navbar-menu"><span class="fa fa-times"
+                        id="hidden-navbar-menu"></span></a>
+            </li>
+            <li>
+                <a>Features</a>
+            </li>
+            <li>
+                <a>Video</a>
+            </li>
+            <li>
+                <a>Documentation</a>
+            </li>
+            <li>
+                <a>Dowload</a>
+            </li>
+            <li class="menu-navbar-content-pc-search">
+                <i (click)="onClickDisplaySearchBar()" class="fa fa-search menu-navbar-content-pc-search-icon"></i>
+            </li>
+        </ul>
+        <div class="menu-navbar-search" *ngIf="isDisplaySearchBar">
+            <input type="text" placeholder="Nhập từ khóa ..." />
+            <i class="fa fa-search menu-navbar-content-pc-search-icon"></i>
+            <i (click)="onClickDisplaySearchBar()" class="fa fa-times menu-navbar-content-pc-search-icon"></i>
+        </div>
+    </div>
+</div>

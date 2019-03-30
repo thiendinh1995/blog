@@ -1,51 +1,9 @@
 <div class="container">
     <!-- header -->
-    <div class="header">
-        <div class="header-content">
-            <div class="header-content-left">
-                <p>My Project</p>
-            </div>
-            <div class="header-content-right">
-                <p>Login</p>
-            </div>
-        </div>
-    </div>
+    <btd-header></btd-header>
     <!-- end header -->
     <!-- menu-navbar -->
-    <div class="menu-navbar">
-        <div class="menu-navbar-content-pc">
-            <ul class="menu-navbar-content-mobile-name-menu">
-                <li>
-                    <a id="icon-menu" (click)="showMenuNavbar()"><span class="fa fa-list"
-                            id="hidden-navbar-list"></span></a>
-                    <a id="hidden-navbar-menu-search"><span class="fa fa-search"
-                            id="hidden-navbar-menu-search"></span></a>
-                </li>
-            </ul>
-            <ul class="menu-navbar-content-pc-name-menu">
-                <li>
-                    <a>Home</a>
-                    <a (click)="showMenuNavbar()" id="hidden-navbar-menu"><span class="fa fa-times"
-                            id="hidden-navbar-menu"></span></a>
-                </li>
-                <li>
-                    <a>Features</a>
-                </li>
-                <li>
-                    <a>Video</a>
-                </li>
-                <li>
-                    <a>Documentation</a>
-                </li>
-                <li>
-                    <a>Dowload</a>
-                </li>
-                <li class="menu-navbar-content-pc-search">
-                    <i class="fa fa-search menu-navbar-content-pc-search-icon"></i>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <btd-menu-bar></btd-menu-bar>
     <!-- end menu-navbar -->
     <div class="content">
         <!-- <btd-home-page></btd-home-page> -->
@@ -105,7 +63,8 @@
                 </div>
                 <div class="list-categories">
                     <ul class="list-item-categoris">
-                        <li id="first-item" (click)="onClickCategory()">Business<span class="label-count">(5)</span></li>
+                        <li id="first-item" (click)="onClickCategory()">Business<span class="label-count">(5)</span>
+                        </li>
                         <li>Photograph<span class="label-count">(5)</span></li>
                         <li>Sport<span class="label-count">(5)</span></li>
                         <li>Technology<span class="label-count">(5)</span></li>
@@ -139,8 +98,9 @@
         </div>
 
     </div>
-</div>
+    <div style="height: 200px; background: #111111; margin-top: 30px">
 
-<div style="height: 200px; background: #111111; margin-top: 30px">
-
+    </div>
 </div>
+<btd-login></btd-login>
+

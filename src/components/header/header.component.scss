@@ -1,0 +1,93 @@
+@import "../../assets/variable/variable.scss";
+
+.header {
+  background-color: map-get($colors, dark);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-content {
+  display: flex;
+  height: 40px;
+  flex: 1;
+
+  .header-content-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+
+    p {
+      margin: 0;
+      padding-right: 20px;
+      color: #fff;
+      font-family: map-get($fonts, secondary);
+    }
+
+    i {
+      padding-right: 20px;
+      color: map-get($colors, fontColor);
+    }
+
+    .header-popup {
+      z-index: 1;
+      background-color: map-get($colors, background);
+      animation: fadein 0.5s;
+      right: 20px;
+      margin-top: 5px;
+      position: absolute;
+      border: 1px solid #ebebeb;
+
+      ul {
+        padding: 0;
+        margin: 16px 21px;
+        
+        li {
+          list-style: none;
+          padding: 10px 0 0 0;
+          font-size: 14px;
+          font-family: map-get($fonts, primary);
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          i {
+            padding-right: 10px;
+            color: map-get($colors, icon);
+          }
+        }
+
+        li:hover {
+          color: map-get($colors, primary);
+        }
+      }
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0.7;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .header-content-left {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: map-get($colors, fontColor);
+      padding-left: 20px;
+      font-size: 23px;
+      margin: 0;
+      line-height: 40px;
+      font-family: map-get($fonts, secondary);
+    }
+  }
+}

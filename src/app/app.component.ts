@@ -15,15 +15,7 @@ export class AppComponent implements AfterViewInit {
   isShowMenuNavbar: boolean = false;
 
   @ViewChild('slidersView') sliders: ElementRef;
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    if (event.target.innerWidth > 600) {
-      let menuNavbar = document.getElementsByClassName('menu-navbar-content-pc-name-menu') as HTMLCollectionOf<HTMLElement>;
-      let menuNavBarMobile = document.getElementsByClassName('menu-navbar-content-mobile-name-menu') as HTMLCollectionOf<HTMLElement>;
-      menuNavbar[0].removeAttribute('style');
-      menuNavBarMobile[0].removeAttribute('style');
-    }
-  }
+
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.timerSubscription = timer(2000, 2000).subscribe(() => {
@@ -37,14 +29,6 @@ export class AppComponent implements AfterViewInit {
     // const sliderLast = slides[slides.length - 1].cloneNode(true);
     // (slides[0] as ChildNode).before(sliderLast);
     // (slides[slides.length - 1] as ChildNode).after(sliderFirst);
-  }
-
-  showMenuNavbar(): void {
-    this.isShowMenuNavbar = !this.isShowMenuNavbar;
-    let menuNavbar = document.getElementsByClassName('menu-navbar-content-pc-name-menu') as HTMLCollectionOf<HTMLElement>;
-    let menuNavBarMobile = document.getElementsByClassName('menu-navbar-content-mobile-name-menu') as HTMLCollectionOf<HTMLElement>;
-    menuNavbar[0].style.display = this.isShowMenuNavbar ? 'block' : 'none';
-    menuNavBarMobile[0].style.display = this.isShowMenuNavbar ? 'none' : 'block';
   }
 
   showSlider(): void {

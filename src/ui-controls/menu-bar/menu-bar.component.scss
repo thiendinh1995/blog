@@ -1,0 +1,231 @@
+@import "../../assets/variable/variable.scss";
+
+.menu-navbar {
+  display: flex;
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #1fc8db 20%, #59ed89 75%);
+  justify-content: center;
+}
+
+.menu-navbar-content-pc {
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar-content-pc-name-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  flex-shrink: 1;
+  height: 48px;
+}
+
+.menu-navbar-content-pc-name-menu a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 48px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 13px 0 13px;
+}
+
+.menu-navbar-content-pc-search-icon {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 48px;
+  padding: 0 0 0 13px;
+}
+
+.menu-navbar-content-pc-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ádsa */
+
+#hidden-navbar-menu {
+  display: none;
+}
+
+.menu-navbar-content-mobile-name-menu {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  display: flex;
+}
+
+.menu-navbar-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    flex-grow: 1;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+  }
+}
+
+/* Reponsive screen max 1900px */
+
+@media only screen and (min-width: 1900px) {
+  .menu-navbar-search {
+    width: 700px;
+  }
+}
+
+/* Reponsive screen 1024px to 1899px */
+
+@media only screen and (min-width: 1024px) and (max-width: 1899px) {
+  .menu-navbar-content-mobile-name-menu {
+    display: none;
+  }
+  .menu-navbar-search {
+    width: 700px;
+  }
+  // .menu-navbar-content-pc {
+  //   width: 960px;
+  // }
+}
+
+/* Reponsive screen 768px to 1023px */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-navbar-content-mobile-name-menu {
+    display: none;
+  }
+  .menu-navbar-search {
+    width: 700px;
+  }
+  .menu-navbar-content-pc {
+    width: auto;
+  }
+}
+
+/* Reponsive screen < 767px */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-navbar {
+    height: auto;
+    display: block;
+  }
+  .menu-navbar-content-pc-name-menu {
+    height: 48px;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  .menu-navbar-content-pc-name-menu a {
+    padding: 0;
+  }
+  #hidden-navbar-menu {
+    display: block;
+    visibility: visible;
+    float: right;
+    color: white;
+    padding: 7px 0 0 0;
+    font-size: 18px;
+  }
+  #hidden-navbar-list {
+    font-size: 18px;
+  }
+  #hidden-navbar-menu-search {
+    visibility: visible;
+    float: right;
+    color: white;
+    padding: 0 0 0 0;
+    font-size: 18px;
+  }
+  .menu-navbar-content-pc-search {
+    visibility: hidden;
+    height: 0;
+  }
+  .menu-navbar-content-mobile-name-menu {
+    height: 48px;
+    display: flex;
+    flex: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      flex: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .menu-navbar {
+    height: auto;
+    display: block;
+  }
+  .menu-navbar-content-pc-name-menu {
+    height: 48px;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  .menu-navbar-content-pc-name-menu a {
+    padding: 0;
+  }
+  #hidden-navbar-menu {
+    display: block;
+    visibility: visible;
+    float: right;
+    color: white;
+    padding: 7px 0 0 0;
+    font-size: 18px;
+  }
+  #hidden-navbar-list {
+    font-size: 18px;
+  }
+  #hidden-navbar-menu-search {
+    visibility: visible;
+    float: right;
+    color: white;
+    padding: 0 0 0 0;
+    font-size: 18px;
+  }
+  .menu-navbar-content-pc-search {
+    visibility: hidden;
+    height: 0;
+  }
+  .menu-navbar-content-mobile-name-menu {
+    height: 48px;
+    display: flex;
+    flex: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      flex: 1;
+    }
+  }
+}

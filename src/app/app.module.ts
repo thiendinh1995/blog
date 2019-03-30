@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { appRoutes } from './app.routing';
 import { HomeComponent } from './../components/home/home-page';
 import { PostDetailComponent } from './../components/post-detail/post-detail';
-import { SoftwarePageComponent } from 'src/components/software-page/software-page';
-import { PostCategoryComponent } from 'src/components/post-category/post-category';
+import { SoftwarePageComponent } from '../components/software-page/software-page';
+import { PostCategoryComponent } from '../components/post-category/post-category';
+import { HeaderComponent } from '../components/header/header.component';
+import { MenuBarComponent } from '../ui-controls/menu-bar/menu-bar.component';
+import { LoginComponent } from '../components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { PostCategoryComponent } from 'src/components/post-category/post-categor
     PostDetailComponent,
     SoftwarePageComponent,
     PostCategoryComponent,
+    HeaderComponent,
+    MenuBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
