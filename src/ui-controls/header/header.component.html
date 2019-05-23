@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="header-content">
+        <div class="header-content-left">
+            <p>My Project</p>
+        </div>
+        <div class="header-content-right">
+            <ng-container>
+                <div class="header-name">
+                    <p id="header-login" (click)="openDialogLogin()" *ngIf="!isLogin">Đăng nhập <i class="fa fa-sign-in"
+                            aria-hidden="true"></i>
+                    </p>
+                    <p *ngIf="isLogin"><span>Thiên Đình</span></p>
+                </div>
+                <div class="header-icon" #insidePopup *ngIf="isLogin">
+                    <a id="header-icon-setting" (click)="onClickEvent()"><i class="fa fa-cog"
+                            aria-hidden="true"></i></a>
+                    <div class="header-popup" *ngIf="isDisplayPopup">
+                        <ul>
+                            <li><i class="fa fa-user-o" aria-hidden="true"></i>Thông tin</li>
+                            <li><i class="fa fa-comment-o" aria-hidden="true"></i>Tin nhắn</li>
+                            <li (click)="logoutUser()"><i class="fa fa-sign-out" aria-hidden="true"></i>Đăng xuất</li>
+                        </ul>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,146 @@
+@import "../../assets/variable/variable.scss";
+
+.dialog {
+  display: flex;
+  position: fixed;
+  background-color: map-get($colors, popup);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  z-index: 5;
+
+  .dialog-content {
+    width: 380px;
+    border-radius: 2px;
+    background-color: white;
+    animation: fadeInDialogContent 300ms 0ms forwards;
+
+    @keyframes fadeInDialogContent {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      } to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOutDialogContent {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      } to {
+        transform: translateY(30);
+        opacity: 0;
+      }
+    }
+
+    .dialog-form {
+      .header-option {
+        display: flex;
+        justify-content: flex-end;
+        color: map-get($colors, icon);
+
+        i {
+          padding: 5px;
+        }
+      }
+
+      .form-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25px 0 25px;
+        position: relative;
+
+        i {
+          padding-left: 10px;
+          padding-right: 15px;
+        }
+
+        input {
+          border: none;
+          outline: none;
+        }
+
+        .input-username {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 34px;
+          color: #555;
+          border: 1px solid map-get($colors, border-color);
+        }
+
+        .input-password {
+          @extend .input-username;
+          margin-top: 15px;
+        }
+
+        .submit-form {
+          width: 100%;
+          margin-top: 25px;
+
+          button {
+            width: 100%;
+            height: 38px;
+            background-color: map-get($colors, primary);
+            border: none;
+            text-transform: uppercase;
+            color: map-get($colors, font-color);
+          }
+        }
+      
+        .forgot-password {
+          color: map-get($colors, link);
+          margin-top: 10px;
+          margin-bottom: 25px;
+
+          a {
+            cursor: pointer;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .login-social {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 38px;
+          margin-top: 5px;
+
+          i {
+            position: absolute;
+            left: 10px;
+          }
+        }
+
+        .facebook {
+          background-color: map-get($colors, facebook);
+          color: map-get($colors, font-color);
+        }
+
+        .google {
+          background-color: map-get($colors, google);
+          color: map-get($colors, font-color);
+        }
+
+        .twitter {
+          background-color: map-get($colors, twitter);
+          color: map-get($colors, font-color);
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import { Component, AfterViewInit, HostListener, ViewChild, ElementRef } from '@angular/core';
-import { timer, Subscription } from 'rxjs';
+import { Component, AfterViewInit, HostListener, ViewChild, ElementRef, ViewContainerRef } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -13,15 +13,34 @@ export class AppComponent implements AfterViewInit {
   sliderCurrent: number = 0;
   timerSubscription: Subscription;
   isShowMenuNavbar: boolean = false;
+  isOpenDialogLogin: boolean = false;
+  isLogin: boolean = false;
 
-  @ViewChild('slidersView') sliders: ElementRef;
+  @ViewChild('testOutlet', { read: ViewContainerRef })
+  testOutlet: ViewContainerRef | undefined;
 
-
-  constructor(private route: ActivatedRoute, private router: Router) {
-    this.timerSubscription = timer(2000, 2000).subscribe(() => {
-      this.showSlider();
-    });
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router, ) {
   }
+
+  // loadComponent() {
+  //   this.dynamicComponentLoader
+  //     .getComponentFactory<HeaderComponent>('header')
+  //     .subscribe({
+  //       next: componentFactory => {
+  //         if (!this.testOutlet) {
+  //           return;
+  //         }
+
+  //         const ref = this.testOutlet.createComponent(componentFactory);
+  //         ref.changeDetectorRef.detectChanges();
+  //       },
+  //       error: err => {
+  //         console.warn(err);
+  //       }
+  //     });
+  // }
 
   ngAfterViewInit(): void {
     let slides = document.getElementsByClassName('post-image') as HTMLCollectionOf<HTMLElement>;
@@ -46,4 +65,11 @@ export class AppComponent implements AfterViewInit {
     this.router.navigate(['/post-category']);
   }
 
+  openDialogLogin(data): void {
+    this.isOpenDialogLogin = data;
+  }
+
+  handleUserLogin(data: any): void {
+    this.isLogin = data.isLogin;
+  }
 }

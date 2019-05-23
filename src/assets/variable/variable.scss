@@ -1,17 +1,21 @@
 $colors: (
   primary: #59ed89,
   secondary: #32db64,
-  danger: #f53d3d,
   light: #f4f4f4,
   dark: #111111,
-  favorite: #69bb7b,
   fontColor: #fff,
+  font-color: #fff,
   background: #f8f8f8,
   icon: #656565,
-  popup: rgba(0,0,0,0.4),
+  border-color: #ccc,
+  popup: rgba(0, 0, 0, 0.4),
+  link: #999,
+  facebook: #337ab7,
+  google: #d9534f,
+  twitter: #5bc0de
 );
 
 $fonts: (
-  primary: 'Open Sans, sans-serif',
-  secondary: 'Merriweather, Georgia, serif',
+  primary: "'Open Sans',sans-serif",
+  secondary: "Merriweather, Georgia, serif"
 );

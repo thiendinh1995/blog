@@ -1,36 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routing';
-import { HomeComponent } from './../components/home/home-page';
-import { PostDetailComponent } from './../components/post-detail/post-detail';
-import { SoftwarePageComponent } from '../components/software-page/software-page';
-import { PostCategoryComponent } from '../components/post-category/post-category';
-import { HeaderComponent } from '../components/header/header.component';
-import { MenuBarComponent } from '../ui-controls/menu-bar/menu-bar.component';
-import { LoginComponent } from '../components/login/login.component';
+import { ClientModule } from '../client/client.module';
+import { UIControlModule } from '../ui-controls/ui-control.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    PostDetailComponent,
-    SoftwarePageComponent,
-    PostCategoryComponent,
-    HeaderComponent,
-    MenuBarComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: false } // <-- debugging purposes only
-    )
+    BrowserAnimationsModule,
+    ClientModule,
+    UIControlModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+  ]
 })
 export class AppModule { }

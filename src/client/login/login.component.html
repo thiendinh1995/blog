@@ -1,0 +1,39 @@
+<div class="dialog" *ngIf="isCloseDialog">
+    <div class="dialog-content">
+        <div class="dialog-form">
+            <div class="header-option">
+                <i class="fa fa-times" aria-hidden="true" (click)="closeDialog()"></i>
+            </div>
+            <div class="form-wrap">
+                <h2>Đăng nhập</h2>
+                <div class="input-username">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input placeholder="Tên đăng nhập" />
+                </div>
+                <div class="input-password">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input placeholder="Mật khẩu" />
+                </div>
+                <div class="submit-form">
+                    <button (click)="handleUserLogin()">Xác nhận</button>
+                </div>
+                <div class="forgot-password">
+                    <a>Quên mật khẩu ?</a>
+                </div>
+                <div class="login-social facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <p>Đăng nhập bằng Facebook</p>
+                </div>
+                <div class="login-social google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <p>Đăng nhập bằng Google</p>
+                </div>
+                <div class="login-social twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <p>Đăng nhập bằng Twitter</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

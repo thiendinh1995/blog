@@ -1,14 +1,12 @@
 <div class="container">
     <!-- header -->
-    <btd-header></btd-header>
+    <btd-header (openDialogLoginEvent)="openDialogLogin($event)" [isLogin]="isLogin"></btd-header>
     <!-- end header -->
     <!-- menu-navbar -->
     <btd-menu-bar></btd-menu-bar>
     <!-- end menu-navbar -->
     <div class="content">
-        <!-- <btd-home-page></btd-home-page> -->
         <router-outlet></router-outlet>
-        <!-- <btd-post-detail></btd-post-detail> -->
         <div class="content-right">
             <div class="follow-email">
                 <div class="follow-email-content">
@@ -102,5 +100,5 @@
 
     </div>
 </div>
-<btd-login></btd-login>
+<btd-login [isCloseDialog]="isOpenDialogLogin" (closeDialogEvent)="handleUserLogin($event)"></btd-login>
 
